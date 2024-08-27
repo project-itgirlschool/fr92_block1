@@ -7,7 +7,8 @@
     font-weight: 400;
     font-style: normal;
 }
-
+html
+{color: rgb(24, 33, 109);}
 /* Header styles */
 
 /* Main part styles */
@@ -23,5 +24,44 @@
 /* MAIN-Flexible pricing  plan */
 
 /* MAIN-Testimonial */
-
+.wrapper-block6{ 
+    background-color: #FAFAFA;
+    border:1px solid black;
+    height: 650px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.content-bl6{
+    font-family: "Inter", sans-serif;
+    width: 600px;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.title-bl6{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 48px;
+}
+.text-bl6{
+    font-size: 24px;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 44px;
+}
+.author-bl6{
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 26px;
+}
+.manager-bl6{
+    font-size: 16px;
+    font-weight: 400;
+}
+.img-bl6{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 /* Footer styles */
