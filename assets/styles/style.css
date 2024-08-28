@@ -24,6 +24,76 @@ html
 /* MAIN-Flexible pricing  plan */
 
 /* MAIN-Testimonial */
+header{
+    display: grid;
+    grid-template-columns: 200px 150px 150px 150px 150px 150px 150px 100px 100px;
+    grid-template-rows: 100px;
+    justify-content: space-around;
+}
+.logo{
+    display: grid;
+    grid-column: 1;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+a:link{
+    text-decoration: rgb(24, 33, 109);
+}
+.nav{
+    display: grid;
+    grid-column: 2 / 6;
+    margin-top: 35px;
+    font-family: 'Inter';
+}
+.home{
+    display: grid;
+    grid-column: 2;
+    margin-right: 30px;
+    text-decoration: none
+}
+.feature{
+    display: grid;
+    grid-column: 3;
+    margin-right: 30px;
+    text-decoration: none
+}
+.pricing{
+    display: grid;
+    grid-column: 4;
+    margin-right: 30px;
+    text-decoration: none
+}
+.solution{
+    display: grid;
+    grid-column: 5;
+    margin-right: 30px;
+    text-decoration: none
+}
+.faq{
+    display: grid;
+    grid-column: 6;   
+    text-decoration: none
+}
+.btn-sign_in{
+    display: grid;
+    grid-column: 7;
+    border: none;
+    background-color: white;
+    margin-top: 35px;
+    color: rgb(24, 33, 109);
+    font-family: 'Inter';
+}
+.btn-download{
+    display: grid;
+    grid-column: 8;
+    border: none;
+    background: rgb(24, 33, 109);
+    color: white;
+    height: 35px;
+    margin-top: 30px;
+    align-items: center;
+    border-radius: 7px;
+}
 .wrapper-block6{ 
     background-color: #FAFAFA;
     border:1px solid black;
