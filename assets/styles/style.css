@@ -17,7 +17,6 @@ html
 
 /* MAIN-Our special features */
 
-/* MAIN-Integrate with your outlook or gmail calendar */
 
 /* MAIN-Powering your comunicaiton from anywhere world. */
 
@@ -134,4 +133,62 @@ a:link{
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
+/* MAIN-Integrate with your outlook or gmail calendar */
+
+.main_content_integrate_mail {
+margin-top: 138px;
+width: 1600px;
+height: 593px;
+
+
+}
+
+.main_content_integrate {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: rgba(230, 239, 253, 1);
+}
+
+.main_content_integrate h2 {
+color: #18216D;
+font-size: 36px;
+font-family: "Inter", sans-serif;
+font-weight: 700;
+margin-bottom: 15px;
+margin-left: 215px;
+}
+
+.main_content_integrate p {
+font-size: 16px;
+margin-bottom: 40px;
+color: #18216D;
+margin-left: 215px;
+font-family: "Inter";
+font-weight: 400;
+}
+
+.main_content_mail_buttons a {
+padding: 16px 28px;
+background-color: #005FEC;
+border-radius: 6px;
+color: #FFFFFF;
+font-family: "Inter", sans-serif;
+font-size: 17px;
+text-decoration: none;
+margin-right: 417px;
+display: inline-block;
+margin-left: 215px;
+}
+
+.pic_of_videocall {
+width: 690px;
+height: 437px;
+margin-top: 69px;
+margin-right: 118px;
+margin-bottom: 87px;
+}
+
+
 /* Footer styles */
