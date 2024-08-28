@@ -16,6 +16,41 @@ html
 /* MAIN-The best video online meeting software */
 
 /* MAIN-Our special features */
+.block2{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3 , 33%);
+    grid-template-rows: 30vh 30vh 1 fr;
+
+}
+.Our_special_features{
+    display: grid;
+    grid-column: 1/4;
+    grid-row:1/2 ;
+    justify-items: center;
+
+}
+.Our_special_features h1{
+    font: inter;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+}
+.Affordable{
+    display: grid;
+    grid-column: 1/2;
+    grid-row:2/3 ;  
+}
+.Seamless_Reliability{
+    display: grid;
+    grid-column: 2/3;
+    grid-row:2/3 ;
+ }
+ .Secure Collaboration{
+    display: grid;
+    grid-column: 3/4;
+    grid-row:2/3 ;
+ }
 
 /* MAIN-Integrate with your outlook or gmail calendar */
 
