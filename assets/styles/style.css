@@ -129,6 +129,54 @@ a:link{
     align-items: center;
     border-radius: 7px;
 }
+
+.text1-bl5, .text2-bl5, .card-bl5 {
+    display: flex;
+    justify-content: center;
+    color: rgba(24, 33, 109, 1);
+    }
+
+.text1-bl5 {
+    font-size: 48px;
+}
+
+.text2-bl5 {
+    font-size: 16px;
+}
+
+.card-bl5 {
+    width: 270px;
+    height: 60px;
+    margin-left: 580px;
+    margin-top: 20px;
+    border-radius: 6px;
+    background-color:rgba(0, 94, 236, 0.329);
+    ;
+    align-items: center;
+ }
+
+.annually-bl5 {
+    display: flex;
+    width: 130px ;
+    height: 48px;
+    background-color:rgba(255, 255, 255, 1);
+    ;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-right: 45px;
+
+}
+.monthly-bl5{
+  margin-right: 30px;
+  margin-top: 15px;
+}
+.annually-bl5, .monthly-bl5
+ {
+    font-size: 17px;
+}
+
 .wrapper-block6{ 
     background-color: #FAFAFA;
     border:1px solid black;
