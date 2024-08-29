@@ -234,18 +234,19 @@ a:link {
 
 
 .cardtop{
-  width: 355px;
+  width: 350px;
   height: 160px;
   border: 1px solid gainsboro;
   border-radius: 10px;
 }
 
 .card {
-  width: 355px;
+  width: 350px;
   height: 600px;
   margin-top: 40px;
   margin-bottom: 100px;
   border-radius: 10px;
+  margin-left: 50px;
 }
 
 .top-text1{
@@ -255,6 +256,10 @@ a:link {
 
 .price {
   font-size: 36px;
+  display: flex;
+}
+.price2 {
+  color: gray;
 }
 
 .top-text1, .price{
@@ -262,6 +267,44 @@ a:link {
   font-family: inter;
   margin-left: 20px;
 }
+
+.card-body{
+  width: 250px;
+  height: 260px;
+  align-self: center;
+}
+
+.cardbody-text {
+  font-size: 17px;
+  font: poppins;
+}
+
+.cardbody-text-opc {
+  opacity: 50%;
+}
+#button-b5 , #button-b5-2 {
+  width: 180px;
+  height: 52px;
+  border: 0cap;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+#button-b5{
+  background-color: rgba(0, 119, 255, 0.16);
+ color: rgba(24, 33, 109, 1);
+}
+
+#button-b5-2{
+  background-color: #005FEC;
+  color: #fafafa;
+}
+
+#cb-img 
+{
+  margin-right: 6px;
+}
+
+
 .wrapper-block6 {
   background-color: #fafafa;
   border: 1px solid black;
@@ -285,7 +328,7 @@ a:link {
 }
 .text-bl6 {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 50;
   font-style: italic;
   line-height: 44px;
 }
