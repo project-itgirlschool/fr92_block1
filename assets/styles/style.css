@@ -187,12 +187,22 @@ a:link {
 /* конец. стили к блоку с рейтингом */
 
 .text1-bl5,
-.text2-bl5,
-.card-bl5 {
+.text2-bl5, .card-bl5 {
   display: flex;
   justify-content: center;
   color: rgba(24, 33, 109, 1);
 }
+
+
+.card-bl5 {
+  align-items: center;
+  width: 270px;
+  height: 60px;
+  border-radius: 6px;
+  background-color:rgba(0, 94, 236, 0.329);
+
+} 
+
 
 .text1-bl5 {
   font-size: 48px;
@@ -202,23 +212,12 @@ a:link {
   font-size: 16px;
 }
 
-.card-bl5 {
-    width: 270px;
-    height: 60px;
-    margin-left: 580px;
-    margin-top: 20px;
-    border-radius: 6px;
-    background-color:rgba(0, 94, 236, 0.329);
-    align-items: center;
- } 
 
 .annually-bl5 {
-  display: flex;
   width: 130px;
   height: 48px;
   background-color: rgba(255, 255, 255, 1);
   border-radius: 6px;
-  justify-content: center;
   align-items: center;
   margin-top: 15px;
   margin-right: 45px;
@@ -227,6 +226,7 @@ a:link {
   margin-right: 30px;
   margin-top: 15px;
 }
+
 .annually-bl5,
 .monthly-bl5 {
   font-size: 17px;
@@ -328,7 +328,7 @@ a:link {
 }
 .text-bl6 {
   font-size: 24px;
-  font-weight: 50;
+  font-weight: 500;
   font-style: italic;
   line-height: 44px;
 }
@@ -517,6 +517,12 @@ footer>div>a {
 /* Decoration */
 .bottomborder {
   border-bottom: 1px solid #18216D20;
+}
+  
+@media screen and (max-width:420px){ 
+  .text1-bl5 { 
+  font-size: 2rem;
+}
 }
 
 @media screen and (max-width: 430px) {
