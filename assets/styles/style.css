@@ -337,6 +337,127 @@ margin-bottom: 87px;
 
 /* Footer styles */
 
+/* div, h6, p {
+    border: 1px solid black;
+} */
+
+/* html {
+  font-size: 16px;
+} */
+
+/* Grid - basic */
+footer {
+  font-family: "Inter", serif;
+  color: #18216D;
+  display: grid;
+  /* grid-template-columns: 1.5fr 1fr 1fr 1fr 1.4fr; */
+  /* grid-template-columns: 300px 200px 200px 200px 275px; - size screen - 1600px*/
+  /* grid-template-columns: 1.5fr 1fr 170px 1fr 275px; */
+  /* grid-template-columns: minmax(255px, 1.5fr) minmax(155px, 1fr) minmax(155px, 1fr) minmax(105px, 1fr) minmax(275px, 1.4fr); */
+  grid-template-columns: minmax(255px, 300px) minmax(155px, 200px) minmax(155px, 200px) minmax(105px, 200px) 275px;
+  grid-template-rows: 45px 1fr 2.3fr;  
+  max-width: 1170px;
+  min-width: 945px;
+  padding: 100px 10px 60px 10px;
+  margin: auto;
+}
+.resources {
+  grid-row: 2/4;
+  grid-column: 2/3;
+}
+.product {
+  grid-row: 2/4;
+  grid-column: 3/4;
+}
+.more {
+  grid-row: 2/4;
+  grid-column: 4/5;
+}
+.contact {
+  grid-row: 2/4;
+  grid-column: 5/6;
+}
+.copyright {
+  grid-row: 4/5;
+  grid-column: 1/6;
+  text-align: center;
+}
+/* Element */
+.bluebrick {
+  background-color: #18216D;
+  color: #FFFFFF;
+  border-radius: 3px;
+  padding: 5px 7px 5px 7px;
+  margin: 0px 12px 12px 0px;
+  width: calc(100px - 7px - 7px + 14px);
+}
+/* Flex */
+.horizontal-flex {
+  display: flex;
+  flex-direction: row;
+}
+.gap {
+  justify-content: space-around;
+}
+.vertical-flex {
+  display: flex;
+  flex-direction: column;
+}
+.center-vertical-flex {
+  align-items: center;
+}
+footer>div> {
+  justify-content: center;
+}
+.up-flex {
+  align-items: flex-start;
+}
+/* Fonts and size*/
+h6 {
+  font-size: 22px;  /* 22px - 1.37rem */
+  margin: 0px;
+}
+h6.mainname {
+  font-size: 28px;  /* 28px - 1.75rem */
+  margin-left: 10px;
+}
+p.footer {
+  font-size: 16px;  /* 16px - 1rem */
+  margin: 25px 0px 25px 0px;
+}
+p.copyright {
+  margin-top: 30px;
+}
+p.size7 {
+  font-size: 7px;  /* 7px - 0.43rem */
+  margin: 0px;
+}
+p.size11 {
+  font-size: 11px;  /* 11px - 0.68rem */
+  margin: 0px;
+}
+footer>div>a {
+  color: #18216D;
+  margin: 12.5px 0px 12.5px 0px;
+}
+.mainlogo {
+  width: 45px;
+}
+.footer-logo {
+  height: 20px;
+}
+/* Decoration */
+.bottomborder {
+  border-bottom: 1px solid #18216D20;
+}
+
+@media screen and (max-width: 430px) {
+  footer {
+      display: none;
+  }
+}
+
+
 /* media-запросы к блоку с рейтингом  */
 @media screen and (max-width: 1500px) {
   .main__div {
