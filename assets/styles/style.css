@@ -304,21 +304,25 @@ a:link {
 }
 /* конец. стили к блоку с рейтингом */
 
+/*стили к блоку-5*/
+.first-bl5{
+  display: flex;
+   flex-direction: column;
+  align-items: center;
+}
 .text1-bl5,
 .text2-bl5, .card-bl5 {
-  display: flex;
-  justify-content: center;
   color: rgba(24, 33, 109, 1);
 }
 
 
 .card-bl5 {
+  display: flex;
   align-items: center;
   width: 270px;
   height: 60px;
   border-radius: 6px;
   background-color:rgba(0, 94, 236, 0.329);
-
 } 
 
 .text1-bl5 {
@@ -335,7 +339,6 @@ a:link {
   height: 48px;
   background-color: rgba(255, 255, 255, 1);
   border-radius: 6px;
-  align-items: center;
   margin-top: 15px;
   margin-right: 45px;
 }
@@ -421,6 +424,20 @@ a:link {
   margin-right: 6px;
 }
 
+.button-formedia{
+  display: none;
+}
+
+#BasicFree1, #BasicFree2, #BasicFree3  { background-color: rgba(0, 119, 255, 0.16);
+border: 0cap;
+width: 50%;
+height: 20vh;
+box-sizing: border-box;
+border-radius: 10%;
+margin: 10% 0 10% 25%;
+}
+
+/* конец стилей к блоку-5*/
 
 .wrapper-block6 {
   background-color: #fafafa;
@@ -440,7 +457,7 @@ a:link {
 }
 .title-bl6 {
   font-size: 48px;
-  font-weight: 600;
+  font-weht: 600;
   line-height: 48px;
 }
 .text-bl6 {
@@ -635,13 +652,41 @@ footer>div>a {
 .bottomborder {
   border-bottom: 1px solid #18216D20;
 }
-  
+  /*адаптив блок-5*/
+
 @media screen and (max-width:420px){ 
   .text1-bl5 { 
   font-size: 2rem;
 }
+.card-bl5 {
+  width: 60vw;
+  height: 10vh;
+}
+.annually-bl5{
+ height: 7vh;
+ margin-left: 5%;
 }
 
+.row {
+  display: none;
+}
+
+.button-formedia {
+  display: block;
+}
+}
+
+@media screen and (max-width: 768px) {
+  .row {
+    display: none;
+  }
+  
+  .button-formedia {
+    display: block;
+  }
+  
+}
+/*конец адаптив блок-5*/
 @media screen and (max-width: 430px) {
   footer {
       display: none;
