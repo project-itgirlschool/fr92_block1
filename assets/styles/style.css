@@ -53,6 +53,71 @@ html {
 
 /* MAIN-Powering your comunicaiton from anywhere world. */
 
+#block_4 {
+  display: grid;
+  margin: 100px;
+  grid-gap: 20px;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+h4 {
+  color: #18216D;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 48px;
+}
+
+.text_block4 {
+  color: #18216D;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.container_block4 {
+  width: 300px;
+  height: 108px;
+  color: #18216D;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.checkbox2_bl4 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.start_free_trail{
+  padding: 20px;
+  background-color: #005FEC;
+  color: #FFFFFF;
+  border-radius: 6px;
+  border: none;
+}
+
+.foto1_bl4, .foto2_bl4, .foto3_bl4 {
+  position: relative;
+}
+
+.foto1_bl4 {
+  top: 200px;
+  z-index: 1;
+}
+
+.foto2_bl4 {
+  right: 60px;
+  z-index: 2;
+}
+
+.foto3_bl4 {
+  right: 170px;
+  top: 220px;
+  z-index: 3;
+}
+
+
 /* MAIN-Flexible pricing  plan */
 
 /* MAIN-Testimonial */
