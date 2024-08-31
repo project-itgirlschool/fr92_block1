@@ -342,7 +342,7 @@ a:link {
   height: 50px;
   border-radius: 6px;
   background-color:rgba(0, 94, 236, 0.142);
-} 
+padding: 5px;} 
 
 .annually {
   width: 120px;
@@ -353,7 +353,7 @@ a:link {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 2%;
+
 }
 
 .annually p {
