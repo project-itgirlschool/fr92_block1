@@ -318,7 +318,6 @@ a:link {
 
 .card-bl5 {
   display: flex;
-  align-items: center;
   width: 270px;
   height: 60px;
   border-radius: 6px;
@@ -335,16 +334,21 @@ a:link {
 
 
 .annually-bl5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2%;
+  margin-top: 2%;
   width: 130px;
   height: 48px;
   background-color: rgba(255, 255, 255, 1);
   border-radius: 6px;
-  margin-top: 15px;
-  margin-right: 45px;
+
 }
+
 .monthly-bl5 {
-  margin-right: 30px;
-  margin-top: 15px;
+margin-top: 5%;
+margin-left: 10%;
 }
 
 .annually-bl5,
@@ -676,7 +680,7 @@ footer>div>a {
 }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .row {
     display: none;
   }
@@ -685,6 +689,33 @@ footer>div>a {
     display: block;
   }
   
+}
+@media screen and (max-width:780px) {
+   .top-text1, .price {
+    font-size: 1rem;
+  }
+  .cardbody-text, .cardbody-text-opc {
+    font-size: 0.7rem;
+    margin-left: 15%;
+  }
+ .cardtop {
+  width: 100%;
+ }
+
+ #button-b5, #button-b5-2 {
+  width: 60%;
+ margin-left: 20%;
+}
+
+  
+}
+@media screen  and (max-width:1025px){
+  .card{
+   width: 70%;
+  }
+  .cardtop{
+    width: 100%;
+  }
 }
 /*конец адаптив блок-5*/
 @media screen and (max-width: 430px) {
