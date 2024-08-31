@@ -1,5 +1,5 @@
 /* Шрифты */
-.inter-<uniquifier > {
+.inter-uniquifier {
   font-family: "Inter", sans-serif;
 }
 .poppins-regular {
@@ -470,7 +470,7 @@ margin: 10% 0 10% 25%;
 }
 .title-bl6 {
   font-size: 48px;
-  font-weht: 600;
+  font-weight: 600;
   line-height: 48px;
 }
 .text-bl6 {
@@ -550,15 +550,7 @@ margin-bottom: 87px;
 }
 
 
-/* Footer styles */
-
-/* div, h6, p {
-    border: 1px solid black;
-} */
-
-/* html {
-  font-size: 16px;
-} */
+/* Footer */
 
 /* Grid - basic */
 footer {
@@ -571,9 +563,9 @@ footer {
   /* grid-template-columns: minmax(255px, 1.5fr) minmax(155px, 1fr) minmax(155px, 1fr) minmax(105px, 1fr) minmax(275px, 1.4fr); */
   grid-template-columns: minmax(255px, 300px) minmax(155px, 200px) minmax(155px, 200px) minmax(105px, 200px) 275px;
   grid-template-rows: 45px 1fr 2.3fr;  
-  max-width: 1170px;
-  min-width: 945px;
-  padding: 100px 10px 60px 10px;
+  max-width: 1200x;
+  min-width: 975px;
+  padding: 100px 15px 60px 15px;
   margin: auto;
 }
 .resources {
@@ -665,7 +657,10 @@ footer>div>a {
 .bottomborder {
   border-bottom: 1px solid #18216D20;
 }
-  /*адаптив блок-5*/
+
+/* end Footer */
+
+/*адаптив блок-5*/
 
 @media screen and (max-width:420px){ 
   .text1-bl5 { 
@@ -715,7 +710,6 @@ footer>div>a {
   width: 60%;
  margin-left: 20%;
 }
-
   
 }
 @media screen  and (max-width:1025px){
@@ -727,12 +721,6 @@ footer>div>a {
   }
 }
 /*конец адаптив блок-5*/
-@media screen and (max-width: 430px) {
-  footer {
-      display: none;
-  }
-}
-
 
 /* media-запросы к блоку с рейтингом  */
 @media screen and (max-width: 1500px) {
@@ -774,3 +762,9 @@ footer>div>a {
   }
 }
 /* конец. media-запросы к блоку с рейтингом  */
+
+@media screen and (max-width: 975px) {
+  footer {
+      display: none;
+  }
+}
