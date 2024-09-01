@@ -246,6 +246,7 @@ a:link {
   font-family: 'Inter';
   font-size: 17px;
   margin-left: 70px;
+  border-radius: 5px;
 }
 .img-div_top{
   width: 700px;
