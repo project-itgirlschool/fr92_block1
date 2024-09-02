@@ -123,7 +123,6 @@ h4 {
 
 /* MAIN-Flexible pricing  plan */
 
-/* MAIN-Testimonial */
 
 /* Стили к хэдеру*/
 header {
@@ -457,16 +456,19 @@ margin: 10% 0 10% 25%;
 
 /* конец стилей к блоку-5*/
 
+/* Блок 6 */
+.block-6{
+  color: rgb(24, 33, 109);
+}
 .wrapper-block6 {
   background-color: #fafafa;
-  border: 1px solid black;
   height: 650px;
   display: flex;
   justify-content: space-evenly;
 }
 .content-bl6 {
   font-family: "Inter", sans-serif;
-  width: 600px;
+  width: 40%;
   padding-top: 140px;
   padding-bottom: 140px;
   display: flex;
@@ -782,3 +784,62 @@ footer>div>a {
       display: none;
   }
 }
+/* Адаптив блока №6 */
+@media screen and (max-width:1024px) {
+  .wrapper-block6{
+    height:400px;
+  }
+  .content-bl6{
+    width: 700px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 5%;
+  }
+  .title-bl6 {
+    font-size: 2rem;
+  }
+  .text-bl6 {
+    font-size: 1.5rem;
+    line-height: 35px;
+  }
+  .author-bl6 {
+    font-size: 1.7rem;
+    line-height: 20px;
+  }
+  .img-bl6 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  } 
+  .img-6{
+    width: 90%;
+    height:90%;
+  }
+}
+@media screen and (max-width:430px) {
+  .wrapper-block6{
+    height:50%;
+    width: 95vw;
+  }
+  .content-bl6{
+    text-align: center;
+  }
+  .title-bl6 {
+    font-size: 1.5rem;
+    line-height: 25px;
+    padding-top: 5%;
+  }
+  .text-bl6 {
+    font-size: 1rem;
+    line-height: 25px;
+  }
+  .manager-bl6{
+    display: none;
+  }
+  .author-bl6 {
+    display: none;
+  }
+  .img-bl6 {
+    display: none;
+  } 
+}
+/* Конец адаптива блока 6 */
