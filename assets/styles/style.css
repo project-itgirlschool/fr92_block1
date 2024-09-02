@@ -21,6 +21,8 @@ html {
   display: grid;
   grid-template-columns: repeat(3, 33%);
   grid-template-rows: 30vh 30vh 1 fr;
+  margin-left:2%;
+  color: rgb(24, 33, 109);
 }
 .Our_special_features {
   display: grid;
@@ -33,6 +35,7 @@ html {
   font-size: 48px;
   font-weight: 600;
   line-height: 64px;
+  justify-items: center;
 }
 .Affordable {
   display: grid;
@@ -662,6 +665,15 @@ footer>div>a {
 
 /* end Footer */
 
+/* adaptive-Our special features block 2*/
+ @media screen and (max-width:420px){
+    .block2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     
+    }
+ }
 /*адаптив блок-5*/
 
 @media screen and (max-width:420px){ 
