@@ -130,7 +130,7 @@ header {
   justify-content: space-around;
   margin-top: 25px;
   margin-left: 100px;
-  width: 100%;
+  width: 100vw;
   height: 52px;
   max-width: 1170px;
   min-width: 980px;
@@ -145,7 +145,7 @@ header {
 a:link {
   text-decoration: rgb(24, 33, 109);
 }
-.nav {
+.nav{
   display: grid;
   grid-column: 2 / 6;
   margin-top: 35px;
@@ -200,18 +200,69 @@ a:link {
   align-items: center;
   border-radius: 7px;
 }
-/* конец. стили к хэдеру */
+/* конец. стили к хэдеру*/
+/* Стили к бургеру*/
+.menu-btn{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 25px;
+  right:25px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu-btn > span,
+.menu-btn > span::before,
+.menu-btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(39, 53, 81);
+  transition-duration: .25s;
+}
+.menu-btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu-btn > span::after {
+  content: '';
+  top: 8px;
+}
+#menu-toggle{
+  opacity: 0;
+}
+#menu-toggle{
+  opacity: 0;
+}
+#menu-toggle:checked ~ .menu-btn > span{
+  transform: rotate(45deg);
+}
+#menu-toggle:checked ~ .menu-btn > span::before{
+  top: 0;
+  transform: rotate(0);
+}
+#menu-toggle:checked ~ .menu-btn > span::after{
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu-toggle:checked ~ .menubox{
+  visibility: visible;
+  right: 0;
+}
+/* конец. стили к бургеру */
 
 /* стили к верху 1 блока */
 .main-div_top{
   display: flex;
   justify-content: center;
   margin-left: 215px;
-  width: 70%;
+  width: 100%;
   max-width: 1170px;
   min-width: 1070px;
   margin: 0 auto;
-
 }
 .main-div_top_desc{
   display: flex;
@@ -846,53 +897,25 @@ footer>div>a {
 }
 /*конец адаптив блок-5*/
 
-/* media-запросы к блоку с рейтингом  */
+/*расставленные запросы в порядке убывания*/
+
 @media screen and (max-width: 1500px) {
   .main__div {
     min-width: 90%;
     margin-left: 10%;
+  }
+  .burger-menu{
+    display: none;
   }
 }
 @media screen and (max-width: 1440px) {
   .main__div_h2 {
     max-width: 50%;
   }
-}
-@media screen and (max-width: 900px) {
-  .main_div_wrapper {
-    flex-direction: column;
-  }
-  .main__div_h2 {
-    max-width: 100%;
-  }
-  .gallery_wrapper {
-    margin: 0;
-  }
-  .main__div_gallery {
-    margin: auto;
-  }
-  .main__div_result {
-    justify-content: space-evenly;
+  header{
+  margin-right: 150px;
   }
 }
-@media screen and (max-width: 768px) {
-  .img_none {
-    display: none;
-  }
-}
-@media screen and (max-width: 500px) {
-  .gallery {
-    width: 70%;
-  }
-}
-/* конец. media-запросы к блоку с рейтингом  */
-
-@media screen and (max-width: 975px) {
-  footer {
-      display: none;
-  }
-}
-/* Адаптив блока №6 */
 @media screen and (max-width:1024px) {
   .wrapper-block6{
     height:400px;
@@ -923,6 +946,75 @@ footer>div>a {
     height:90%;
   }
 }
+@media screen and (max-width: 975px) {
+  footer {
+      display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .main_div_wrapper {
+    flex-direction: column;
+  }
+  .main__div_h2 {
+    max-width: 100%;
+  }
+  .gallery_wrapper {
+    margin: 0;
+  }
+  .main__div_gallery {
+    margin: auto;
+  }
+  .main__div_result {
+    justify-content: space-evenly;
+  }
+}
+@media screen and (max-width: 768px) {
+  header{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+  }
+  .nav{
+    display: none;
+  }
+  .btn-sign_in{
+    display: none;
+  }
+  .btn-download{
+    display: none;
+  }
+.burger-menu{
+  display: block;
+}
+.main-div_top{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 70%;
+}
+.desc{
+  margin-left: 40%;
+}
+.text-div_top{
+  margin-left: 45%;
+  white-space: normal;
+}
+.button-div_top{
+  margin-left: 50%;
+}
+.img-div_top{
+  margin-top: 25%;
+  width: 50%;
+  margin-left: 50px;
+}
+  .img_none {
+    display: none;
+  }
+@media screen and (max-width: 500px) {
+  .gallery {
+    width: 70%;
+  }
+}
 @media screen and (max-width:430px) {
   .wrapper-block6{
     height:50%;
@@ -950,4 +1042,3 @@ footer>div>a {
     display: none;
   } 
 }
-/* Конец адаптива блока 6 */
