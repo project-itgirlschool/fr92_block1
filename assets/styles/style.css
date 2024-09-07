@@ -210,11 +210,12 @@ a:link {
 .main_div_wrapper {
   display: flex;
   justify-content: space-between;
-  max-width: 1440px;
+  max-width: 1020px;
   margin: auto;
 }
 .main__div_h2 {
-  max-width: 31%;
+  /* max-width: 31%; */
+  max-width: 44%;
   font-weight: 700;
   font-size: 36px;
 }
@@ -239,7 +240,7 @@ a:link {
 .main__div_gallery {
   display: flex;
   justify-content: space-around;
-  max-width: 1590px;
+  max-width: 1090px;
   margin: auto;
   margin-top: 40px;
   margin-bottom: 100px;
