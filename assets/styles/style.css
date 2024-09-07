@@ -528,27 +528,28 @@ h4 {
   border: none;
 }
 /*Блок-5-Flexible pricing  plan */
-.first-bl5{
+
+.title-bl5 {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-.text1-bl5,
-.text2-bl5, .card-bl5 {
+.title-text1,
+.title-text2, .titlecard-bl5{
   color: rgba(24, 33, 109, 1);
 }
-.text1-bl5 {
+.title-text1{
   font-size: 48px;
 }
-.text2-bl5 {
+.title-text2{
   font-size: 16px;
 }
-.card-bl5 {
+.titlecard-bl5 {
   display: flex;
   align-items: center;
   align-content: center;
-  width: 270px;
+  width: 250px;
   height: 50px;
   border-radius: 6px;
   background-color:rgba(0, 94, 236, 0.142);
@@ -567,23 +568,17 @@ h4 {
 .annually p {
   margin: 0%;
   }
-
- .monthly {
-    margin-top: 5%;
-    }
     
-
-
-}
 .monthly {
   margin-top: 5%;
-  margin-left: 10%;
+  margin-left: 13%;
 }
-.cardtop{
+.cardtop {
   width: 350px;
   height: 160px;
   border: 1px solid gainsboro;
   border-radius: 10px;
+  padding-left: 35px;
 }
 .card {
   width: 350px;
@@ -594,19 +589,24 @@ h4 {
 }
 .top-text1{
   font-size: 24px;
- margin-top: 30px;
+  margin-top: 30px;
+
 }
+
 .price {
   font-size: 36px;
   display: flex;
 }
+
 .price2 {
   color: gray;
 }
-.top-text1, .price{
+
+.top-text1, .price {
   color: rgba(24, 33, 109, 1);
   font-family: inter;
 }
+
 .card-body{
   width: 250px;
   height: 260px;
@@ -977,10 +977,10 @@ footer>div>a {
 /*адаптив блок-5*/
 
 @media screen and (max-width:420px){ 
-  .text1-bl5 { 
+  .title-text1 { 
   font-size: 2rem;
 }
-.card-bl5 {
+.titlecard-bl5{
   width: 60vw;
   height: 10vh;
 }
@@ -1008,7 +1008,7 @@ footer>div>a {
   
 }
 @media screen and (max-width:780px) {
-   .top-text1, .price {
+   .title-text1, .price {
     font-size: 1rem;
   }
   .cardbody-text, .cardbody-text-opc {
