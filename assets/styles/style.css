@@ -10,25 +10,146 @@
 html {
   color: rgb(24, 33, 109);
 }
-/* Стили к хэдеру и блоку 1*/
+
+/* Main part styles */
+.without_margin {
+  margin: 0 auto;
+}
+
+.self_card {
+  display: flex;
+  justify-content: center;
+}
+/* MAIN-The best video online meeting software */
+
+/* MAIN-Our special features */
+.block2 {
+  width: 100%;
+  display: grid;
+  max-width: 1140px;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: 30vh 30vh 1fr;
+  color: rgb(24, 33, 109);
+}
+.Our_special_features {
+  display: grid;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  justify-items: center;
+}
+.Our_special_features h1 {
+  font: inter;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 64px;
+  justify-items: center;
+}
+.Affordable {
+  display: grid;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.Seamless_Reliability {
+  display: grid;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.Secure Collaboration {
+  display: grid;
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+
+/* MAIN-Powering your comunicaiton from anywhere world. */
+
+#block_4 {
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100%;
+  height: 769px;
+}
+
+#foto, #content {
+  margin: 0 auto;
+}
+
+.foto1_bl4, .foto2_bl4, .foto3_bl4 {
+  position: relative;
+}
+
+.foto1_bl4 {
+  top: 200px;
+  z-index: 1;
+}
+
+.foto2_bl4 {
+  right: 60px;
+  z-index: 2;
+}
+
+.foto3_bl4 {
+  right: 170px;
+  top: 220px;
+  z-index: 3;
+}
+
+h4 {
+  color: #18216D;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 48px;
+}
+
+.text_block4 {
+  color: #18216D;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.container_block4 {
+  width: 300px;
+  height: 108px;
+  color: #18216D;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.checkbox2_bl4 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.start_free_trail{
+  padding: 20px;
+  background-color: #005FEC;
+  color: #FFFFFF;
+  border-radius: 6px;
+  border: none;
+}
+
+/* MAIN-Flexible pricing  plan */
+
+
+/* Стили к хэдеру*/
 header {
   display: grid;
-  grid-template-columns: 200px 150px 150px 150px 150px 150px 150px 100px 100px;
+  grid-template-columns: 200px 150px 150px 150px 350px 100px 100px ;
   grid-template-rows: 100px;
-  justify-content: space-around;
-  margin-top: 25px;
-  margin-left: 100px;
-  width: 100vw;
-  height: 52px;
-  max-width: 1170px;
-  min-width: 980px;
+  padding-top: 25px;
+  width: 1400px;
+  height: 77px;
   margin: 0 auto;
 }
 .logo {
   display: grid;
   grid-column: 1;
   margin-top: 30px;
-  margin-left: 40px;
 }
 a:link {
   text-decoration: rgb(24, 33, 109);
@@ -90,6 +211,9 @@ a:link {
 }
 /* конец. стили к хэдеру*/
 /* Стили к бургеру*/
+.burger-menu{
+  display: none;
+}
 .menu-btn{
   display: flex;
   align-items: center;
@@ -119,6 +243,34 @@ a:link {
   content: '';
   top: 8px;
 }
+.menu-list {
+  top: 0;
+  right: 0;
+  position: absolute;
+  display: grid;
+  opacity: 0;
+  gap: 12px;
+  padding: 42px 0;
+  margin: 0;
+  background: rgb(39, 53, 81);
+  list-style-type: none;
+  transform: translateX(100%);
+  transition: .3s;
+  width: 200px;
+  height: 100vh;
+}
+.menu-item {
+  display: block;
+  padding: 8px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+}
+.menu-item:hover {
+  background: rgba(255,255,255,.2)
+}
+
 #menu-toggle{
   opacity: 0;
 }
@@ -131,25 +283,27 @@ a:link {
 #menu-toggle:checked ~ .menu-btn > span::before{
   top: 0;
   transform: rotate(0);
+  background-color: #fafafa;
 }
 #menu-toggle:checked ~ .menu-btn > span::after{
   top: 0;
   transform: rotate(90deg);
+  background-color: #fafafa;
 }
-#menu-toggle:checked ~ .menubox{
+#menu-toggle:checked ~ .menu-list{
   visibility: visible;
+  transform: translateX(0);
   right: 0;
+  opacity: 1;
 }
+
 /* конец. стили к бургеру */
 
 /* стили к верху 1 блока */
 .main-div_top{
   display: flex;
   justify-content: center;
-  margin-left: 215px;
   width: 100%;
-  max-width: 1170px;
-  min-width: 1070px;
   margin: 0 auto;
 }
 .main-div_top_desc{
@@ -174,7 +328,6 @@ a:link {
 .text-div_top{
   display: flex;
   align-self: center;
-  margin-left: 80px;
 }
 .button-div_top{
   background: #00ecd0;
@@ -184,7 +337,6 @@ a:link {
   border: none;
   font-family: 'Inter';
   font-size: 17px;
-  margin-left: 70px;
   border-radius: 5px;
 }
 .img-div_top{
@@ -222,7 +374,6 @@ a:link {
   display: flex;
   justify-content: space-between;
   gap: 70px;
-  /* margin-right: 130px; */
 }
 .div__result_number {
   font-weight: 700;
@@ -232,9 +383,6 @@ a:link {
   margin-top: 10px;
   font-weight: 400;
   font-size: 16px;
-}
-.gallery_wrapper {
-  margin-left: 3%;
 }
 .main__div_gallery {
   display: flex;
@@ -246,14 +394,7 @@ a:link {
 }
 /* конец. стили к блоку с рейтингом */
 /* Блок 2-MAIN-Our special features */
-.block2 {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 33%);
-  grid-template-rows: 30vh 30vh 1 fr;
-  margin-left:2%;
-  color: rgb(24, 33, 109);
-}
+
 .Our_special_features {
   display: grid;
   grid-column: 1/4;
@@ -425,6 +566,14 @@ h4 {
 }
 .annually p {
   margin: 0%;
+  }
+
+ .monthly {
+    margin-top: 5%;
+    }
+    
+
+
 }
 .monthly {
   margin-top: 5%;
@@ -442,7 +591,6 @@ h4 {
   margin-top: 40px;
   margin-bottom: 100px;
   border-radius: 10px;
-  margin-left: 50px;
 }
 .top-text1{
   font-size: 24px;
@@ -458,7 +606,6 @@ h4 {
 .top-text1, .price{
   color: rgba(24, 33, 109, 1);
   font-family: inter;
-  margin-left: 20px;
 }
 .card-body{
   width: 250px;
@@ -549,22 +696,75 @@ h4 {
   padding-bottom: 100px;
 }
 
+/* MAIN-Integrate with your outlook or gmail calendar */
+
+.main_content_integrate_mail {
+margin-top: 138px;
+width: 100%;
+height: 593px;
+
+
+}
+
+.main_content_integrate {
+display: flex;
+justify-content: space-around;
+align-items: center;
+margin: 0 auto;
+background-color: rgba(230, 239, 253, 1);
+}
+
+.main_content_integrate h2 {
+color: #18216D;
+font-size: 36px;
+font-family: "Inter", sans-serif;
+font-weight: 700;
+margin-bottom: 15px;
+}
+
+.main_content_integrate p {
+font-size: 16px;
+margin-bottom: 40px;
+color: #18216D;
+font-family: "Inter";
+font-weight: 400;
+}
+
+.main_content_mail_buttons a {
+padding: 16px 28px;
+background-color: #005FEC;
+border-radius: 6px;
+color: #FFFFFF;
+font-family: "Inter", sans-serif;
+font-size: 17px;
+text-decoration: none;
+display: inline-block;
+}
+
+.pic_of_videocall {
+width: 690px;
+height: 437px;
+margin-top: 69px;
+margin-right: 118px;
+margin-bottom: 87px;
+}
+
+
 /* Footer */
 /* Grid - basic */
+
 footer {
   font-family: "Inter", serif;
   color: #18216D;
   display: grid;
+  justify-content: center;
   /* grid-template-columns: 1.5fr 1fr 1fr 1fr 1.4fr; */
   /* grid-template-columns: 300px 200px 200px 200px 275px; - size screen - 1600px*/
   /* grid-template-columns: 1.5fr 1fr 170px 1fr 275px; */
   /* grid-template-columns: minmax(255px, 1.5fr) minmax(155px, 1fr) minmax(155px, 1fr) minmax(105px, 1fr) minmax(275px, 1.4fr); */
   grid-template-columns: minmax(255px, 300px) minmax(155px, 200px) minmax(155px, 200px) minmax(105px, 200px) 275px;
   grid-template-rows: 45px 1fr 2.3fr;  
-  max-width: 1200x;
-  min-width: 975px;
   padding: 100px 15px 60px 15px;
-  margin: auto;
 }
 .resources {
   grid-row: 2/4;
@@ -624,7 +824,6 @@ h6 {
 }
 h6.mainname {
   font-size: 28px;  /* 28px - 1.75rem */
-  margin-left: 10px;
 }
 p.footer {
   font-size: 16px;  /* 16px - 1rem */
@@ -747,7 +946,6 @@ footer>div>a {
   }
   #content {
     padding: 0px;
-    margin-left: 100px;
   }
 }
 
@@ -788,7 +986,6 @@ footer>div>a {
 }
 .annually-bl5{
  height: 7vh;
- margin-left: 5%;
 }
 
 .row {
@@ -816,7 +1013,6 @@ footer>div>a {
   }
   .cardbody-text, .cardbody-text-opc {
     font-size: 0.7rem;
-    margin-left: 15%;
   }
  .cardtop {
   width: 100%;
@@ -824,7 +1020,6 @@ footer>div>a {
 
  #button-b5, #button-b5-2 {
   width: 60%;
- margin-left: 20%;
 }
   
 }
@@ -843,7 +1038,6 @@ footer>div>a {
 @media screen and (max-width: 1500px) {
   .main__div {
     min-width: 90%;
-    margin-left: 10%;
   }
   .burger-menu{
     display: none;
@@ -854,8 +1048,45 @@ footer>div>a {
     max-width: 50%;
   }
   header{
-  margin-right: 150px;
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
   }
+}
+@media screen and (max-width:1080px){
+  header{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+  }
+  .nav{
+    display: none;
+  }
+  .btn-sign_in{
+    display: none;
+  }
+  .btn-download{
+    display: none;
+  }
+.burger-menu{
+  display: block;
+}
+.main-div_top{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+}
+.img-div_top{
+  margin-top: 30%;
+  width: 70%;
+} 
+.text-div_top{
+  margin-left: 20%;
+}
+.button-div_top{
+margin-left: 25%;
+}
 }
 @media screen and (max-width:1024px) {
   .wrapper-block6{
@@ -933,24 +1164,14 @@ footer>div>a {
   justify-content: space-around;
   width: 70%;
 }
-.desc{
-  margin-left: 40%;
-}
-.text-div_top{
-  margin-left: 45%;
-  white-space: normal;
-}
-.button-div_top{
-  margin-left: 50%;
-}
 .img-div_top{
   margin-top: 25%;
   width: 50%;
-  margin-left: 50px;
 }
   .img_none {
     display: none;
   }
+}
 @media screen and (max-width: 500px) {
   .gallery {
     width: 70%;
