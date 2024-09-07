@@ -285,7 +285,7 @@ a:link {
 /* Блок 3-Integrate with your outlook or gmail calendar */
 .main_content_integrate_mail {
   margin-top: 138px;
-  width: 1600px;
+  width: 1440px;
   height: 593px;
   }
   .main_content_integrate {
@@ -321,12 +321,15 @@ a:link {
   margin-right: 417px;
   display: inline-block;
   margin-left: 215px;
+  width: 160px;
+  height: 52px;
   }
   .pic_of_videocall {
-  width: 690px;
+  width: 600px;
   height: 437px;
   margin-top: 69px;
-  margin-right: 118px;
+  margin-right: 100px;
+  margin-left: 1px;
   margin-bottom: 87px;
   }
 /*Блок-4-MAIN-Powering your comunicaiton from anywhere world. */
@@ -670,8 +673,6 @@ footer>div>a {
   .main_content_integrate_mail {
     display: none;
   }
-
-
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -693,10 +694,12 @@ footer>div>a {
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1577px) {
+@media screen and (min-width: 1200px) and (max-width: 1439px) {
  .pic_of_videocall {
   width: 50%;
  }
+
+
 }
 
 
