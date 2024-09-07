@@ -529,6 +529,9 @@ h4 {
 }
 /*Блок-5-Flexible pricing  plan */
 
+.block5{
+  margin-top: 30vh;
+}
 .title-bl5 {
   display: flex;
   flex-direction: column;
@@ -638,7 +641,7 @@ h4 {
 #cb-img {
   margin-right: 6px;
 }
-.button-formedia{
+.button-formedia {
   display: none;
 }
 #BasicFree1, #BasicFree2, #BasicFree3  { 
@@ -976,61 +979,6 @@ footer>div>a {
  }
 /*адаптив блок-5*/
 
-@media screen and (max-width:420px){ 
-  .title-text1 { 
-  font-size: 2rem;
-}
-.titlecard-bl5{
-  width: 60vw;
-  height: 10vh;
-}
-.annually-bl5{
- height: 7vh;
-}
-
-.row {
-  display: none;
-}
-
-.button-formedia {
-  display: block;
-}
-}
-
-@media screen and (max-width: 600px) {
-  .row {
-    display: none;
-  }
-  
-  .button-formedia {
-    display: block;
-  }
-  
-}
-@media screen and (max-width:780px) {
-   .title-text1, .price {
-    font-size: 1rem;
-  }
-  .cardbody-text, .cardbody-text-opc {
-    font-size: 0.7rem;
-  }
- .cardtop {
-  width: 100%;
- }
-
- #button-b5, #button-b5-2 {
-  width: 60%;
-}
-  
-}
-@media screen  and (max-width:1025px){
-  .card{
-   width: 70%;
-  }
-  .cardtop{
-    width: 100%;
-  }
-}
 /*конец адаптив блок-5*/
 
 /*расставленные запросы в порядке убывания*/
