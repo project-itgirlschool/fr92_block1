@@ -542,12 +542,14 @@ h4 {
 .title-text2, .titlecard-bl5{
   color: rgba(24, 33, 109, 1);
 }
-.title-text1{
+.title-text1 {
   font-size: 48px;
 }
-.title-text2{
-  font-size: 16px;
+
+.title-text2 {
+  font-size:16px;
 }
+
 .titlecard-bl5 {
   display: flex;
   align-items: center;
@@ -644,16 +646,16 @@ h4 {
 .button-formedia {
   display: none;
 }
-#BasicFree1, #BasicFree2, #BasicFree3  { 
+#BasicFree, #pro, #business  { 
   background-color: rgba(0, 119, 255, 0.16);
-  border: 0cap;
-  width: 50%;
-  height: 20vh;
+  width: 20%;
+  height: 8vh;
   box-sizing: border-box;
-  border-radius: 10%;
-  margin: 10% 0 10% 25%;
+  border-radius: 50%;
+  margin:10% 0% 10% 10%
 }
 /* конец стилей к блоку-5*/
+
 /* Блок 6-Testimonial */
 .block-6{
   color: rgb(24, 33, 109);
@@ -978,7 +980,51 @@ footer>div>a {
     }
  }
 /*адаптив блок-5*/
-
+@media screen and (max-width:420px){ 
+  .title-text1 { 
+  font-size: 1rem;
+}
+.titlecard-bl5{
+  width: 60vw;
+  height: 10vh;
+}
+.annually-bl5{
+ height: 7vh;
+}
+}
+  @media screen and (max-width: 1200px) {
+    .row {
+      display:none;
+    }
+    .button-formedia {
+      display: block;
+    }
+    
+  }
+  @media screen and (max-width:780px) {
+     .title-text1, .price {
+      font-size: 1rem;
+    }
+    .cardbody-text, .cardbody-text-opc {
+      font-size: 0.7rem;
+    }
+   .cardtop {
+    width: 100%;
+   }
+  
+   #button-b5, #button-b5-2 {
+    width: 60%;
+  }
+    
+  }
+  @media screen and (max-width:1025px){
+    .card{
+     width: 100%;
+    }
+    .cardtop {
+      width: 100%;
+    }
+  }
 /*конец адаптив блок-5*/
 
 /*расставленные запросы в порядке убывания*/
